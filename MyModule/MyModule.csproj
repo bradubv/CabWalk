@@ -1,22 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>WinExe</OutputType>
     <TargetFramework>net6.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <BaseOutputPath>..\CabWalk\bin</BaseOutputPath>
   </PropertyGroup>
-
-  <ItemGroup>
-    <None Remove="ProfileCatalog.xml" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="ProfileCatalog.xml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Cnt.CompositeUI.WinForms" Version="1.0.3" />
