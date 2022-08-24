@@ -4,13 +4,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.3.32811.315
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CabWalk", "CabWalk\CabWalk.csproj", "{A03E64D0-EC59-4376-9162-98DAE74DE12D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E2A308AF-9F11-4DB8-B5A1-D4F817798C0B} = {E2A308AF-9F11-4DB8-B5A1-D4F817798C0B}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CF7F0FF4-D0A6-4E50-91DF-9AFD979CF4A0}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyModule", "MyModule\MyModule.csproj", "{E2A308AF-9F11-4DB8-B5A1-D4F817798C0B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyModule", "MyModule\MyModule.csproj", "{E2A308AF-9F11-4DB8-B5A1-D4F817798C0B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
