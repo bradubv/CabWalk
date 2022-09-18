@@ -13,7 +13,7 @@ The original Microsoft Patterns & Practices solution had 4 different projects (o
     * check out commit [c3809d8](https://github.com/bradubv/CabWalk/commit/c3809d8ffba36513eaea1799d7a841f401968efb)
     * Add a SplitContainer and a TabWorkspace to the first (left) panel of that container in the Shell (main) Form.
 1. Step 4
-    * check out commit []()
+    * check out commit [494173d](https://github.com/bradubv/CabWalk/commit/494173de4abae02b908a7113834960f5880acb62)
     * The module now has a view that displays a message.
 
 Until I figure out how to publish the CAB nuget packages, you can build them from source
