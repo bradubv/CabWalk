@@ -17,7 +17,6 @@ namespace MyModule
         {
             base.Load();
             myCatalogService.RegisterWorkItem<MyWorkItem>();
-            MessageBox.Show("Hello there!");
         }
     }
 }
