@@ -6,6 +6,7 @@ namespace MyModule
     public class MyModuleInit : ModuleInit
     {
         private IWorkItemTypeCatalogService myCatalogService;
+        private WorkItem parentWorkItem;
 
         [ServiceDependency]
         public IWorkItemTypeCatalogService myWorkItemCatalog
@@ -13,10 +14,18 @@ namespace MyModule
             set { myCatalogService = value; }
         }
 
+        [ServiceDependency]
+        public WorkItem ParentWorkItem
+        {
+            set { parentWorkItem = value; }
+        }
+
         public override void Load()
         {
             base.Load();
-            myCatalogService.RegisterWorkItem<MyWorkItem>();
+            //myCatalogService.RegisterWorkItem<MyWorkItem>();
+            MyWorkItem myWorkItem = parentWorkItem.WorkItems.AddNew<MyWorkItem>();
+            myWorkItem.Run(parentWorkItem.Workspaces["tabWorkspace1"]);
         }
     }
 }
